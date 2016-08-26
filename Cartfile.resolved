@@ -1,0 +1,6 @@
+github "Alamofire/Alamofire" "3.4.1"
+github "kishikawakatsumi/KeychainAccess" "v2.3.6"
+github "Quick/Nimble" "v4.1.0"
+github "p2/OAuth2" "2.2.8"
+github "Quick/Quick" "v0.9.3"
+github "SwiftyJSON/SwiftyJSON" "2.3.3"
