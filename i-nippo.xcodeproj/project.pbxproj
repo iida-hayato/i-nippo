@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B92CBAA1D708FEB00473D40 /* 04F5B617-7FBA-3B0A-AD43-1301A59DD2AE.bcsymbolmap in Resources */ = {isa = PBXBuildFile; fileRef = 0B92C81A1D708FEA00473D40 /* 04F5B617-7FBA-3B0A-AD43-1301A59DD2AE.bcsymbolmap */; };
+		0B92CBAB1D708FEB00473D40 /* 3C7A565B-CBCF-36E4-89DD-75C2FDAD5611.bcsymbolmap in Resources */ = {isa = PBXBuildFile; fileRef = 0B92C81B1D708FEA00473D40 /* 3C7A565B-CBCF-36E4-89DD-75C2FDAD5611.bcsymbolmap */; };
+		0B92CBAC1D708FEB00473D40 /* 4F915BED-87F6-30E6-BD37-A7C0771BB9A7.bcsymbolmap in Resources */ = {isa = PBXBuildFile; fileRef = 0B92C81C1D708FEA00473D40 /* 4F915BED-87F6-30E6-BD37-A7C0771BB9A7.bcsymbolmap */; };
+		0B92CBAD1D708FEB00473D40 /* 6125595F-450D-3479-BE1E-19D2AA2D8128.bcsymbolmap in Resources */ = {isa = PBXBuildFile; fileRef = 0B92C81D1D708FEA00473D40 /* 6125595F-450D-3479-BE1E-19D2AA2D8128.bcsymbolmap */; };
+		0B92CBAE1D708FEB00473D40 /* 818242B1-B227-395C-8FBF-CF4FC9ADCE41.bcsymbolmap in Resources */ = {isa = PBXBuildFile; fileRef = 0B92C81E1D708FEA00473D40 /* 818242B1-B227-395C-8FBF-CF4FC9ADCE41.bcsymbolmap */; };
+		0B92CBAF1D708FEB00473D40 /* A204F826-4E27-3065-AC3C-608753E0F9C0.bcsymbolmap in Resources */ = {isa = PBXBuildFile; fileRef = 0B92C81F1D708FEA00473D40 /* A204F826-4E27-3065-AC3C-608753E0F9C0.bcsymbolmap */; };
+		0B92CBB01D708FEB00473D40 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B92C8201D708FEA00473D40 /* Alamofire.framework */; };
+		0B92CBB11D708FEB00473D40 /* Alamofire.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = 0B92C8211D708FEA00473D40 /* Alamofire.framework.dSYM */; };
+		0B92CBB21D708FEB00473D40 /* BF3B395F-06E6-331A-AECC-2F29E85316DE.bcsymbolmap in Resources */ = {isa = PBXBuildFile; fileRef = 0B92C8221D708FEA00473D40 /* BF3B395F-06E6-331A-AECC-2F29E85316DE.bcsymbolmap */; };
+		0B92CBB31D708FEB00473D40 /* ED4AFB8E-F121-3F57-903C-615AB780C78C.bcsymbolmap in Resources */ = {isa = PBXBuildFile; fileRef = 0B92C8231D708FEA00473D40 /* ED4AFB8E-F121-3F57-903C-615AB780C78C.bcsymbolmap */; };
+		0B92CBB41D708FEB00473D40 /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B92C8241D708FEA00473D40 /* KeychainAccess.framework */; };
+		0B92CBB51D708FEB00473D40 /* KeychainAccess.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = 0B92C8251D708FEA00473D40 /* KeychainAccess.framework.dSYM */; };
+		0B92CBB81D708FEB00473D40 /* OAuth2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B92C8281D708FEA00473D40 /* OAuth2.framework */; };
+		0B92CBB91D708FEB00473D40 /* OAuth2.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = 0B92C8291D708FEA00473D40 /* OAuth2.framework.dSYM */; };
+		0B92CBBC1D708FEB00473D40 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B92C82C1D708FEA00473D40 /* SwiftyJSON.framework */; };
+		0B92CBBD1D708FEB00473D40 /* SwiftyJSON.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = 0B92C82D1D708FEA00473D40 /* SwiftyJSON.framework.dSYM */; };
 		0BE43A3B1D70819C007AB85F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE43A3A1D70819C007AB85F /* AppDelegate.swift */; };
 		0BE43A3D1D70819C007AB85F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE43A3C1D70819C007AB85F /* ViewController.swift */; };
 		0BE43A401D70819C007AB85F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BE43A3E1D70819C007AB85F /* Main.storyboard */; };
@@ -34,6 +50,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B92C81A1D708FEA00473D40 /* 04F5B617-7FBA-3B0A-AD43-1301A59DD2AE.bcsymbolmap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "04F5B617-7FBA-3B0A-AD43-1301A59DD2AE.bcsymbolmap"; sourceTree = "<group>"; };
+		0B92C81B1D708FEA00473D40 /* 3C7A565B-CBCF-36E4-89DD-75C2FDAD5611.bcsymbolmap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "3C7A565B-CBCF-36E4-89DD-75C2FDAD5611.bcsymbolmap"; sourceTree = "<group>"; };
+		0B92C81C1D708FEA00473D40 /* 4F915BED-87F6-30E6-BD37-A7C0771BB9A7.bcsymbolmap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "4F915BED-87F6-30E6-BD37-A7C0771BB9A7.bcsymbolmap"; sourceTree = "<group>"; };
+		0B92C81D1D708FEA00473D40 /* 6125595F-450D-3479-BE1E-19D2AA2D8128.bcsymbolmap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "6125595F-450D-3479-BE1E-19D2AA2D8128.bcsymbolmap"; sourceTree = "<group>"; };
+		0B92C81E1D708FEA00473D40 /* 818242B1-B227-395C-8FBF-CF4FC9ADCE41.bcsymbolmap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "818242B1-B227-395C-8FBF-CF4FC9ADCE41.bcsymbolmap"; sourceTree = "<group>"; };
+		0B92C81F1D708FEA00473D40 /* A204F826-4E27-3065-AC3C-608753E0F9C0.bcsymbolmap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "A204F826-4E27-3065-AC3C-608753E0F9C0.bcsymbolmap"; sourceTree = "<group>"; };
+		0B92C8201D708FEA00473D40 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
+		0B92C8211D708FEA00473D40 /* Alamofire.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = Alamofire.framework.dSYM; sourceTree = "<group>"; };
+		0B92C8221D708FEA00473D40 /* BF3B395F-06E6-331A-AECC-2F29E85316DE.bcsymbolmap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "BF3B395F-06E6-331A-AECC-2F29E85316DE.bcsymbolmap"; sourceTree = "<group>"; };
+		0B92C8231D708FEA00473D40 /* ED4AFB8E-F121-3F57-903C-615AB780C78C.bcsymbolmap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "ED4AFB8E-F121-3F57-903C-615AB780C78C.bcsymbolmap"; sourceTree = "<group>"; };
+		0B92C8241D708FEA00473D40 /* KeychainAccess.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KeychainAccess.framework; sourceTree = "<group>"; };
+		0B92C8251D708FEA00473D40 /* KeychainAccess.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = KeychainAccess.framework.dSYM; sourceTree = "<group>"; };
+		0B92C8261D708FEA00473D40 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Nimble.framework; sourceTree = "<group>"; };
+		0B92C8271D708FEA00473D40 /* Nimble.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = Nimble.framework.dSYM; sourceTree = "<group>"; };
+		0B92C8281D708FEA00473D40 /* OAuth2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OAuth2.framework; sourceTree = "<group>"; };
+		0B92C8291D708FEA00473D40 /* OAuth2.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = OAuth2.framework.dSYM; sourceTree = "<group>"; };
+		0B92C82A1D708FEA00473D40 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Quick.framework; sourceTree = "<group>"; };
+		0B92C82B1D708FEA00473D40 /* Quick.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = Quick.framework.dSYM; sourceTree = "<group>"; };
+		0B92C82C1D708FEA00473D40 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = "<group>"; };
+		0B92C82D1D708FEA00473D40 /* SwiftyJSON.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = SwiftyJSON.framework.dSYM; sourceTree = "<group>"; };
 		0BE43A371D70819C007AB85F /* i-nippo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "i-nippo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BE43A3A1D70819C007AB85F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0BE43A3C1D70819C007AB85F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +90,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B92CBB41D708FEB00473D40 /* KeychainAccess.framework in Frameworks */,
+				0B92CBBC1D708FEB00473D40 /* SwiftyJSON.framework in Frameworks */,
+				0B92CBB01D708FEB00473D40 /* Alamofire.framework in Frameworks */,
+				0B92CBB81D708FEB00473D40 /* OAuth2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,9 +114,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B92C8171D708FEA00473D40 /* Carthage */ = {
+			isa = PBXGroup;
+			children = (
+				0B92C8181D708FEA00473D40 /* Build */,
+			);
+			path = Carthage;
+			sourceTree = "<group>";
+		};
+		0B92C8181D708FEA00473D40 /* Build */ = {
+			isa = PBXGroup;
+			children = (
+				0B92C8191D708FEA00473D40 /* iOS */,
+			);
+			path = Build;
+			sourceTree = "<group>";
+		};
+		0B92C8191D708FEA00473D40 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				0B92C81A1D708FEA00473D40 /* 04F5B617-7FBA-3B0A-AD43-1301A59DD2AE.bcsymbolmap */,
+				0B92C81B1D708FEA00473D40 /* 3C7A565B-CBCF-36E4-89DD-75C2FDAD5611.bcsymbolmap */,
+				0B92C81C1D708FEA00473D40 /* 4F915BED-87F6-30E6-BD37-A7C0771BB9A7.bcsymbolmap */,
+				0B92C81D1D708FEA00473D40 /* 6125595F-450D-3479-BE1E-19D2AA2D8128.bcsymbolmap */,
+				0B92C81E1D708FEA00473D40 /* 818242B1-B227-395C-8FBF-CF4FC9ADCE41.bcsymbolmap */,
+				0B92C81F1D708FEA00473D40 /* A204F826-4E27-3065-AC3C-608753E0F9C0.bcsymbolmap */,
+				0B92C8201D708FEA00473D40 /* Alamofire.framework */,
+				0B92C8211D708FEA00473D40 /* Alamofire.framework.dSYM */,
+				0B92C8221D708FEA00473D40 /* BF3B395F-06E6-331A-AECC-2F29E85316DE.bcsymbolmap */,
+				0B92C8231D708FEA00473D40 /* ED4AFB8E-F121-3F57-903C-615AB780C78C.bcsymbolmap */,
+				0B92C8241D708FEA00473D40 /* KeychainAccess.framework */,
+				0B92C8251D708FEA00473D40 /* KeychainAccess.framework.dSYM */,
+				0B92C8261D708FEA00473D40 /* Nimble.framework */,
+				0B92C8271D708FEA00473D40 /* Nimble.framework.dSYM */,
+				0B92C8281D708FEA00473D40 /* OAuth2.framework */,
+				0B92C8291D708FEA00473D40 /* OAuth2.framework.dSYM */,
+				0B92C82A1D708FEA00473D40 /* Quick.framework */,
+				0B92C82B1D708FEA00473D40 /* Quick.framework.dSYM */,
+				0B92C82C1D708FEA00473D40 /* SwiftyJSON.framework */,
+				0B92C82D1D708FEA00473D40 /* SwiftyJSON.framework.dSYM */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
 		0BE43A2E1D70819C007AB85F = {
 			isa = PBXGroup;
 			children = (
+				0B92C8171D708FEA00473D40 /* Carthage */,
 				0BE43A391D70819C007AB85F /* i-nippo */,
 				0BE43A4E1D70819C007AB85F /* i-nippoTests */,
 				0BE43A591D70819C007AB85F /* i-nippoUITests */,
@@ -135,6 +219,7 @@
 				0BE43A331D70819C007AB85F /* Sources */,
 				0BE43A341D70819C007AB85F /* Frameworks */,
 				0BE43A351D70819C007AB85F /* Resources */,
+				0B92CF0D1D70911E00473D40 /* copy-frameworks */,
 			);
 			buildRules = (
 			);
@@ -229,9 +314,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B92CBB91D708FEB00473D40 /* OAuth2.framework.dSYM in Resources */,
+				0B92CBB21D708FEB00473D40 /* BF3B395F-06E6-331A-AECC-2F29E85316DE.bcsymbolmap in Resources */,
+				0B92CBB51D708FEB00473D40 /* KeychainAccess.framework.dSYM in Resources */,
+				0B92CBAF1D708FEB00473D40 /* A204F826-4E27-3065-AC3C-608753E0F9C0.bcsymbolmap in Resources */,
+				0B92CBAA1D708FEB00473D40 /* 04F5B617-7FBA-3B0A-AD43-1301A59DD2AE.bcsymbolmap in Resources */,
 				0BE43A451D70819C007AB85F /* LaunchScreen.storyboard in Resources */,
+				0B92CBAD1D708FEB00473D40 /* 6125595F-450D-3479-BE1E-19D2AA2D8128.bcsymbolmap in Resources */,
+				0B92CBAB1D708FEB00473D40 /* 3C7A565B-CBCF-36E4-89DD-75C2FDAD5611.bcsymbolmap in Resources */,
+				0B92CBBD1D708FEB00473D40 /* SwiftyJSON.framework.dSYM in Resources */,
 				0BE43A421D70819C007AB85F /* Assets.xcassets in Resources */,
 				0BE43A401D70819C007AB85F /* Main.storyboard in Resources */,
+				0B92CBB11D708FEB00473D40 /* Alamofire.framework.dSYM in Resources */,
+				0B92CBAC1D708FEB00473D40 /* 4F915BED-87F6-30E6-BD37-A7C0771BB9A7.bcsymbolmap in Resources */,
+				0B92CBAE1D708FEB00473D40 /* 818242B1-B227-395C-8FBF-CF4FC9ADCE41.bcsymbolmap in Resources */,
+				0B92CBB31D708FEB00473D40 /* ED4AFB8E-F121-3F57-903C-615AB780C78C.bcsymbolmap in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +347,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B92CF0D1D70911E00473D40 /* copy-frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/KeychainAccess.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/OAuth2.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+			);
+			name = "copy-frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0BE43A331D70819C007AB85F /* Sources */ = {
@@ -401,6 +519,33 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Alamofire/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Alamofire/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Alamofire/Carthage/Build/tvOS",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Alamofire/Carthage/Build/watchOS",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Nimble/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Nimble/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Nimble/Carthage/Build/tvOS",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Nimble/Carthage/Build/watchOS",
+					"$(PROJECT_DIR)/Carthage/Checkouts/OAuth2/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Checkouts/OAuth2/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Carthage/Checkouts/OAuth2/Carthage/Build/tvOS",
+					"$(PROJECT_DIR)/Carthage/Checkouts/OAuth2/Carthage/Build/watchOS",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Quick/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Quick/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Quick/Carthage/Build/tvOS",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Quick/Carthage/Build/watchOS",
+					"$(PROJECT_DIR)/Carthage/Checkouts/SwiftyJSON/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Checkouts/SwiftyJSON/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Carthage/Checkouts/SwiftyJSON/Carthage/Build/tvOS",
+					"$(PROJECT_DIR)/Carthage/Checkouts/SwiftyJSON/Carthage/Build/watchOS",
+				);
 				INFOPLIST_FILE = "i-nippo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "hi.i-nippo";
@@ -412,6 +557,33 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Alamofire/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Alamofire/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Alamofire/Carthage/Build/tvOS",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Alamofire/Carthage/Build/watchOS",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Nimble/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Nimble/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Nimble/Carthage/Build/tvOS",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Nimble/Carthage/Build/watchOS",
+					"$(PROJECT_DIR)/Carthage/Checkouts/OAuth2/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Checkouts/OAuth2/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Carthage/Checkouts/OAuth2/Carthage/Build/tvOS",
+					"$(PROJECT_DIR)/Carthage/Checkouts/OAuth2/Carthage/Build/watchOS",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Quick/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Quick/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Quick/Carthage/Build/tvOS",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Quick/Carthage/Build/watchOS",
+					"$(PROJECT_DIR)/Carthage/Checkouts/SwiftyJSON/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Checkouts/SwiftyJSON/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Carthage/Checkouts/SwiftyJSON/Carthage/Build/tvOS",
+					"$(PROJECT_DIR)/Carthage/Checkouts/SwiftyJSON/Carthage/Build/watchOS",
+				);
 				INFOPLIST_FILE = "i-nippo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "hi.i-nippo";
@@ -484,6 +656,7 @@
 				0BE43A611D70819C007AB85F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0BE43A621D70819C007AB85F /* Build configuration list for PBXNativeTarget "i-nippoTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +665,7 @@
 				0BE43A641D70819C007AB85F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0BE43A651D70819C007AB85F /* Build configuration list for PBXNativeTarget "i-nippoUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +674,7 @@
 				0BE43A671D70819C007AB85F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
