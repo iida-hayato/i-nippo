@@ -1,0 +1,5 @@
+language: objective-c
+osx_image: xcode7.3
+script: xcodebuild -project i-nippo.xcodeproj -scheme i-nippoUnitTests -destination platform="iOS Simulator,name=iPhone 6s" -sdk iphonesimulator test  | xcpretty  && exit ${PIPESTATUS[0]}
+before_script:
+  - sudo systemsetup -settimezone  Asia/Tokyo
