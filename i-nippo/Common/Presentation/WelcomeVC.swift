@@ -7,8 +7,8 @@
 //
 
 import UIKit
-import OAuth2
 import SwiftyJSON
+import OAuthSwift
 import KeychainAccess
 
 class WelcomeVC: UIViewController {
@@ -22,9 +22,11 @@ class WelcomeVC: UIViewController {
 
     } else {
       // contextとして自身（UIViewController)を指定する
-      Auth.sharedInstance.oauth2!.authConfig.authorizeContext = self
+//      Auth.sharedInstance.oauth2!.authConfig.authorizeContext = self
       // ログイン画面を出す
-      Auth.sharedInstance.oauth2!.authorize()
+//      Auth.sharedInstance.oauth2!.authorize()
+      Auth.sharedInstance.oauthswift.authorize_url_handler = SafariURLHandler(viewController: self)
+      Auth.sharedInstance.auth()
     }
   }
 }

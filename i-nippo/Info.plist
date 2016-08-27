@@ -24,10 +24,10 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>hi.i-nippo</string>
+			<string></string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>nippo-app</string>
+				<string>oauth-swift</string>
 			</array>
 		</dict>
 	</array>

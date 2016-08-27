@@ -21,7 +21,7 @@ extension instantiableStoryboard{
   }
   static func initFromStoryboard()->Self{
     let storyboard: UIStoryboard = UIStoryboard(name: storyboardName, bundle: nil)
-    let vc =  storyboard.instantiateInitialViewController() as! Self
-    return vc
+    let vc =  storyboard.instantiateInitialViewController()
+    return vc  as! Self
   }
 }
