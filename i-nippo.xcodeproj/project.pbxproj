@@ -28,10 +28,10 @@
 		0B92CBB31D708FEB00473D40 /* ED4AFB8E-F121-3F57-903C-615AB780C78C.bcsymbolmap in Resources */ = {isa = PBXBuildFile; fileRef = 0B92C8231D708FEA00473D40 /* ED4AFB8E-F121-3F57-903C-615AB780C78C.bcsymbolmap */; };
 		0B92CBB41D708FEB00473D40 /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B92C8241D708FEA00473D40 /* KeychainAccess.framework */; };
 		0B92CBB51D708FEB00473D40 /* KeychainAccess.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = 0B92C8251D708FEA00473D40 /* KeychainAccess.framework.dSYM */; };
-		0B92CBB81D708FEB00473D40 /* OAuth2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B92C8281D708FEA00473D40 /* OAuth2.framework */; };
-		0B92CBB91D708FEB00473D40 /* OAuth2.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = 0B92C8291D708FEA00473D40 /* OAuth2.framework.dSYM */; };
 		0B92CBBC1D708FEB00473D40 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B92C82C1D708FEA00473D40 /* SwiftyJSON.framework */; };
 		0B92CBBD1D708FEB00473D40 /* SwiftyJSON.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = 0B92C82D1D708FEA00473D40 /* SwiftyJSON.framework.dSYM */; };
+		0B9C47451D71DDD900C384CE /* OAuthSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B9C47431D71DDD900C384CE /* OAuthSwift.framework */; };
+		0B9C47461D71DDD900C384CE /* OAuthSwift.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = 0B9C47441D71DDD900C384CE /* OAuthSwift.framework.dSYM */; };
 		0BD59B201D70942300ED92D2 /* TimelineNavigationController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BD59B1D1D70942300ED92D2 /* TimelineNavigationController.storyboard */; };
 		0BD59B221D70BF3E00ED92D2 /* TimelineNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD59B211D70BF3E00ED92D2 /* TimelineNavigationController.swift */; };
 		0BE43A3B1D70819C007AB85F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE43A3A1D70819C007AB85F /* AppDelegate.swift */; };
@@ -79,12 +79,12 @@
 		0B92C8251D708FEA00473D40 /* KeychainAccess.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = KeychainAccess.framework.dSYM; sourceTree = "<group>"; };
 		0B92C8261D708FEA00473D40 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Nimble.framework; sourceTree = "<group>"; };
 		0B92C8271D708FEA00473D40 /* Nimble.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = Nimble.framework.dSYM; sourceTree = "<group>"; };
-		0B92C8281D708FEA00473D40 /* OAuth2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OAuth2.framework; sourceTree = "<group>"; };
-		0B92C8291D708FEA00473D40 /* OAuth2.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = OAuth2.framework.dSYM; sourceTree = "<group>"; };
 		0B92C82A1D708FEA00473D40 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Quick.framework; sourceTree = "<group>"; };
 		0B92C82B1D708FEA00473D40 /* Quick.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = Quick.framework.dSYM; sourceTree = "<group>"; };
 		0B92C82C1D708FEA00473D40 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = "<group>"; };
 		0B92C82D1D708FEA00473D40 /* SwiftyJSON.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = SwiftyJSON.framework.dSYM; sourceTree = "<group>"; };
+		0B9C47431D71DDD900C384CE /* OAuthSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OAuthSwift.framework; sourceTree = "<group>"; };
+		0B9C47441D71DDD900C384CE /* OAuthSwift.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = OAuthSwift.framework.dSYM; sourceTree = "<group>"; };
 		0BD59B1A1D70942300ED92D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0BD59B1C1D70942300ED92D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Welcome.storyboard; sourceTree = "<group>"; };
 		0BD59B1D1D70942300ED92D2 /* TimelineNavigationController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TimelineNavigationController.storyboard; sourceTree = "<group>"; };
@@ -108,8 +108,8 @@
 			files = (
 				0B92CBB41D708FEB00473D40 /* KeychainAccess.framework in Frameworks */,
 				0B92CBBC1D708FEB00473D40 /* SwiftyJSON.framework in Frameworks */,
+				0B9C47451D71DDD900C384CE /* OAuthSwift.framework in Frameworks */,
 				0B92CBB01D708FEB00473D40 /* Alamofire.framework in Frameworks */,
-				0B92CBB81D708FEB00473D40 /* OAuth2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +180,8 @@
 			isa = PBXGroup;
 			children = (
 				0B92C81A1D708FEA00473D40 /* 04F5B617-7FBA-3B0A-AD43-1301A59DD2AE.bcsymbolmap */,
+				0B9C47431D71DDD900C384CE /* OAuthSwift.framework */,
+				0B9C47441D71DDD900C384CE /* OAuthSwift.framework.dSYM */,
 				0B92C81B1D708FEA00473D40 /* 3C7A565B-CBCF-36E4-89DD-75C2FDAD5611.bcsymbolmap */,
 				0B92C81C1D708FEA00473D40 /* 4F915BED-87F6-30E6-BD37-A7C0771BB9A7.bcsymbolmap */,
 				0B92C81D1D708FEA00473D40 /* 6125595F-450D-3479-BE1E-19D2AA2D8128.bcsymbolmap */,
@@ -193,8 +195,6 @@
 				0B92C8251D708FEA00473D40 /* KeychainAccess.framework.dSYM */,
 				0B92C8261D708FEA00473D40 /* Nimble.framework */,
 				0B92C8271D708FEA00473D40 /* Nimble.framework.dSYM */,
-				0B92C8281D708FEA00473D40 /* OAuth2.framework */,
-				0B92C8291D708FEA00473D40 /* OAuth2.framework.dSYM */,
 				0B92C82A1D708FEA00473D40 /* Quick.framework */,
 				0B92C82B1D708FEA00473D40 /* Quick.framework.dSYM */,
 				0B92C82C1D708FEA00473D40 /* SwiftyJSON.framework */,
@@ -371,12 +371,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B92CBB91D708FEB00473D40 /* OAuth2.framework.dSYM in Resources */,
 				0B92CBB21D708FEB00473D40 /* BF3B395F-06E6-331A-AECC-2F29E85316DE.bcsymbolmap in Resources */,
 				0B92CBB51D708FEB00473D40 /* KeychainAccess.framework.dSYM in Resources */,
 				0B92CBAF1D708FEB00473D40 /* A204F826-4E27-3065-AC3C-608753E0F9C0.bcsymbolmap in Resources */,
 				0B92CBAA1D708FEB00473D40 /* 04F5B617-7FBA-3B0A-AD43-1301A59DD2AE.bcsymbolmap in Resources */,
 				0B193BB21D70C75C00188F78 /* Welcome.storyboard in Resources */,
+				0B9C47461D71DDD900C384CE /* OAuthSwift.framework.dSYM in Resources */,
 				0B92CBAD1D708FEB00473D40 /* 6125595F-450D-3479-BE1E-19D2AA2D8128.bcsymbolmap in Resources */,
 				0B193BB31D70C75F00188F78 /* LaunchScreen.storyboard in Resources */,
 				0B92CBAB1D708FEB00473D40 /* 3C7A565B-CBCF-36E4-89DD-75C2FDAD5611.bcsymbolmap in Resources */,
@@ -416,7 +416,7 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/KeychainAccess.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/OAuth2.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/OAuthSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
 			);
 			name = "copy-frameworks";

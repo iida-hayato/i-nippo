@@ -8,20 +8,20 @@
 
 import UIKit
 
-protocol instantiableStoryboard{
-  static var storyboardName:String {get}
+protocol instantiableStoryboard {
+  static var storyboardName: String {get}
   static func initFromStoryboard()->Self
 }
 
-extension instantiableStoryboard{
-  static var storyboardName:String {
-    get{
+extension instantiableStoryboard {
+  static var storyboardName: String {
+    get {
       return String(Self.self)
     }
   }
-  static func initFromStoryboard()->Self{
+  static func initFromStoryboard()->Self {
     let storyboard: UIStoryboard = UIStoryboard(name: storyboardName, bundle: nil)
-    let vc =  storyboard.instantiateInitialViewController() as! Self
-    return vc
+    let vc =  storyboard.instantiateInitialViewController()
+    return vc  as! Self
   }
 }

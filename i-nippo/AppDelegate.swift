@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import OAuthSwift
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -42,14 +42,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   }
 
   func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
-    if let path = url.path {
-      if path.hasPrefix("/callback") {
-        Auth.sharedInstance.oauth2?.handleRedirectURL(url)
-        return true
-      }
-    }
-    return false
+        OAuthSwift.handleOpenURL(url)
+    return true
   }
-  
-}
 
+}
