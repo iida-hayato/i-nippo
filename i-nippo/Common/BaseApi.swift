@@ -14,8 +14,6 @@ protocol Entity {
   init(json: JSON)
 }
 
-
-
 struct Api {
   typealias compBlock = ([NipposE]) -> ()
   typealias errBlock = (NSError) -> ()
