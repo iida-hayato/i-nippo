@@ -16,7 +16,7 @@ class Auth {
   let ACCESS_TOKEN   = "access_token"
   let keychain = KeychainAccess.Keychain(service: "hi.i-nippo")
 
-  let oauthswift : OAuth2Swift
+  let oauthswift: OAuth2Swift
 
   init() {
     oauthswift = OAuth2Swift(
@@ -27,7 +27,7 @@ class Auth {
       responseType:   "code"
     )
   }
-  func auth(){
+  func auth() {
     oauthswift.authorizeWithCallbackURL(
       NSURL(string: "oauth-swift://oauth/callback")!,
       scope: "", state:"NIPPO",
@@ -38,8 +38,7 @@ class Auth {
       },
       failure: { error in
         print(error.localizedDescription)
-      }
-    )
+      })
   }
 
 

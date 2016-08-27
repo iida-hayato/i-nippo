@@ -45,6 +45,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         OAuthSwift.handleOpenURL(url)
     return true
   }
-  
-}
 
+}
