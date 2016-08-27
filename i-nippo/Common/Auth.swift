@@ -52,5 +52,5 @@ class Auth {
   func logout() {
     try! keychain.remove(ACCESS_TOKEN)
   }
-  
+
 }
