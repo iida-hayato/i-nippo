@@ -9,7 +9,7 @@
 import Foundation
 import SwiftyJSON
 
-struct NipposE: Entity {
+struct NippoEntity: Entity {
   var user_id: Int?
   var reported_for: String?
   var subject: String?
@@ -26,8 +26,8 @@ struct NipposE: Entity {
 }
 
 extension Api {
-  static func nippos(success: compBlock? = nil, fail: errBlock? = nil) {
+  static func nippos(success: compBlock? = nil) {
     let url = domain + "/api/nippos"
-    client(url, success:success, fail:fail)
+    client(url, success:success, fail:nil)
   }
 }

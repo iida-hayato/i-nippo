@@ -15,7 +15,7 @@ protocol Entity {
 }
 
 struct Api {
-  typealias compBlock = ([NipposE]) -> ()
+  typealias compBlock = ([NippoEntity]) -> ()
   typealias errBlock = (NSError) -> ()
 
   static let domain = "http://localhost:3000"

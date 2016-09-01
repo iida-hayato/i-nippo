@@ -8,6 +8,46 @@
 
 import Foundation
 import UIKit
-class TimelineVC: UIViewController {
+final class TimelineVC: UIViewController ,instantiableStoryboard,UITableViewDataSource,UITableViewDelegate{
+  @IBOutlet var tableView: UITableView!
 
+  var _data:[NippoEntity]  = []
+  var data:[NippoEntity] {
+    get{
+      return self._data
+    }
+    set(d) {
+      self._data = d
+      self.tableView.reloadData()
+    }
+  }
+
+  override func viewDidLoad() {
+    self.tableView.dataSource = self
+    self.tableView.delegate = self
+  }
+
+  override func viewDidAppear(animated: Bool) {
+    Api.nippos{
+      self.data  = $0
+    }
+  }
+
+  // セルの行数
+  func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    return data.count
+  }
+
+  // セルのテキストを追加
+  func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "Cell")
+
+    cell.textLabel?.text = data[indexPath.row].body
+    return cell
+  }
+
+  // セルがタップされた時
+  func tableView(table: UITableView, didSelectRowAtIndexPath indexPath:NSIndexPath) {
+    print(data[indexPath.row])
+  }
 }
