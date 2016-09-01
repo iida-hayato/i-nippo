@@ -11,6 +11,8 @@ import UIKit
 final class TimelineVC: UIViewController ,instantiableStoryboard,UITableViewDataSource,UITableViewDelegate {
   @IBOutlet var tableView: UITableView!
 
+  var refleshControl:UIRefreshControl!
+
   var _data: [NippoEntity]  = []
   var data: [NippoEntity] {
     get {
@@ -25,12 +27,21 @@ final class TimelineVC: UIViewController ,instantiableStoryboard,UITableViewData
   override func viewDidLoad() {
     self.tableView.dataSource = self
     self.tableView.delegate = self
+    self.refleshControl = UIRefreshControl()
+    self.refleshControl.attributedTitle = NSAttributedString(string: "引っ張って更新")
+    self.refleshControl.addTarget(self, action: #selector(reflesh), forControlEvents: UIControlEvents.ValueChanged)
+    self.tableView.addSubview(self.refleshControl)
+  }
+
+  func reflesh(){
+    Api.nippos {
+      self.data  = $0
+      self.refleshControl.endRefreshing()
+    }
   }
 
   override func viewDidAppear(animated: Bool) {
-    Api.nippos {
-      self.data  = $0
-    }
+    reflesh()
   }
 
   // セルの行数
