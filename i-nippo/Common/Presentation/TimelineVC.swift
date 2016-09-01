@@ -8,12 +8,12 @@
 
 import Foundation
 import UIKit
-final class TimelineVC: UIViewController ,instantiableStoryboard,UITableViewDataSource,UITableViewDelegate{
+final class TimelineVC: UIViewController ,instantiableStoryboard,UITableViewDataSource,UITableViewDelegate {
   @IBOutlet var tableView: UITableView!
 
-  var _data:[NippoEntity]  = []
-  var data:[NippoEntity] {
-    get{
+  var _data: [NippoEntity]  = []
+  var data: [NippoEntity] {
+    get {
       return self._data
     }
     set(d) {
@@ -28,7 +28,7 @@ final class TimelineVC: UIViewController ,instantiableStoryboard,UITableViewData
   }
 
   override func viewDidAppear(animated: Bool) {
-    Api.nippos{
+    Api.nippos {
       self.data  = $0
     }
   }
@@ -47,7 +47,7 @@ final class TimelineVC: UIViewController ,instantiableStoryboard,UITableViewData
   }
 
   // セルがタップされた時
-  func tableView(table: UITableView, didSelectRowAtIndexPath indexPath:NSIndexPath) {
+  func tableView(table: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
     print(data[indexPath.row])
   }
 }
