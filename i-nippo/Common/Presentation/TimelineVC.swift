@@ -11,7 +11,7 @@ import UIKit
 final class TimelineVC: UIViewController ,instantiableStoryboard,UITableViewDataSource,UITableViewDelegate {
   @IBOutlet var tableView: UITableView!
 
-  var refleshControl:UIRefreshControl!
+  var refleshControl: UIRefreshControl!
 
   var _data: [NippoEntity]  = []
   var data: [NippoEntity] {
@@ -33,7 +33,7 @@ final class TimelineVC: UIViewController ,instantiableStoryboard,UITableViewData
     self.tableView.addSubview(self.refleshControl)
   }
 
-  func reflesh(){
+  func reflesh() {
     Api.nippos {
       self.data  = $0
       self.refleshControl.endRefreshing()
