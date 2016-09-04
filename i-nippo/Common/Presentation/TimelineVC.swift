@@ -43,7 +43,7 @@ final class TimelineVC: UIViewController ,instantiableStoryboard,UITableViewData
   }
 
   // セルのテキストを追加
-  func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath:NSIndexPath) -> UITableViewCell {
+  func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCellWithIdentifier("Cell") as? TimelineCell
     cell?.title.text  = data[indexPath.row].subject
     cell?.body.text  = data[indexPath.row].body
