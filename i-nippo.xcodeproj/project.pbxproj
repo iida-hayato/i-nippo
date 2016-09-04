@@ -32,6 +32,8 @@
 		0B92CBBD1D708FEB00473D40 /* SwiftyJSON.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = 0B92C82D1D708FEA00473D40 /* SwiftyJSON.framework.dSYM */; };
 		0B9C47451D71DDD900C384CE /* OAuthSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B9C47431D71DDD900C384CE /* OAuthSwift.framework */; };
 		0B9C47461D71DDD900C384CE /* OAuthSwift.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = 0B9C47441D71DDD900C384CE /* OAuthSwift.framework.dSYM */; };
+		0B9C47481D7C4BE400C384CE /* TimelineCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B9C47471D7C4BE400C384CE /* TimelineCell.xib */; };
+		0B9C474A1D7C4C4300C384CE /* TimelineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9C47491D7C4C4300C384CE /* TimelineCell.swift */; };
 		0BD59B201D70942300ED92D2 /* TimelineNavigationController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BD59B1D1D70942300ED92D2 /* TimelineNavigationController.storyboard */; };
 		0BD59B221D70BF3E00ED92D2 /* TimelineNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD59B211D70BF3E00ED92D2 /* TimelineNavigationController.swift */; };
 		0BE43A3B1D70819C007AB85F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE43A3A1D70819C007AB85F /* AppDelegate.swift */; };
@@ -85,6 +87,8 @@
 		0B92C82D1D708FEA00473D40 /* SwiftyJSON.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = SwiftyJSON.framework.dSYM; sourceTree = "<group>"; };
 		0B9C47431D71DDD900C384CE /* OAuthSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OAuthSwift.framework; sourceTree = "<group>"; };
 		0B9C47441D71DDD900C384CE /* OAuthSwift.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = OAuthSwift.framework.dSYM; sourceTree = "<group>"; };
+		0B9C47471D7C4BE400C384CE /* TimelineCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimelineCell.xib; sourceTree = "<group>"; };
+		0B9C47491D7C4C4300C384CE /* TimelineCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineCell.swift; sourceTree = "<group>"; };
 		0BD59B1A1D70942300ED92D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0BD59B1C1D70942300ED92D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Welcome.storyboard; sourceTree = "<group>"; };
 		0BD59B1D1D70942300ED92D2 /* TimelineNavigationController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TimelineNavigationController.storyboard; sourceTree = "<group>"; };
@@ -154,6 +158,8 @@
 				0B193BAF1D70C57D00188F78 /* Common */,
 				0BD59B211D70BF3E00ED92D2 /* TimelineNavigationController.swift */,
 				0B57BFA41D7093C800D77039 /* TimelineVC.swift */,
+				0B9C47491D7C4C4300C384CE /* TimelineCell.swift */,
+				0B9C47471D7C4BE400C384CE /* TimelineCell.xib */,
 				0B57BFA61D7093C800D77039 /* WelcomeVC.swift */,
 			);
 			name = Presentation;
@@ -373,6 +379,7 @@
 			files = (
 				0B92CBB21D708FEB00473D40 /* BF3B395F-06E6-331A-AECC-2F29E85316DE.bcsymbolmap in Resources */,
 				0B92CBB51D708FEB00473D40 /* KeychainAccess.framework.dSYM in Resources */,
+				0B9C47481D7C4BE400C384CE /* TimelineCell.xib in Resources */,
 				0B92CBAF1D708FEB00473D40 /* A204F826-4E27-3065-AC3C-608753E0F9C0.bcsymbolmap in Resources */,
 				0B92CBAA1D708FEB00473D40 /* 04F5B617-7FBA-3B0A-AD43-1301A59DD2AE.bcsymbolmap in Resources */,
 				0B193BB21D70C75C00188F78 /* Welcome.storyboard in Resources */,
@@ -439,6 +446,7 @@
 				0BD59B221D70BF3E00ED92D2 /* TimelineNavigationController.swift in Sources */,
 				0B57BF9E1D70937E00D77039 /* Auth.swift in Sources */,
 				0B193BAE1D70C57100188F78 /* ViewController+Storyboard.swift in Sources */,
+				0B9C474A1D7C4C4300C384CE /* TimelineCell.swift in Sources */,
 				0B57BFA91D7093C800D77039 /* TimelineVC.swift in Sources */,
 				0B57BFAB1D7093C800D77039 /* WelcomeVC.swift in Sources */,
 			);
