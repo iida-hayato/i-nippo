@@ -25,6 +25,10 @@ final class TimelineVC: UIViewController ,instantiableStoryboard,UITableViewData
   override func viewDidLoad() {
     self.tableView.dataSource = self
     self.tableView.delegate = self
+    self.tableView.rowHeight = UITableViewAutomaticDimension
+    //カスタムセルを指定
+    let nib  = UINib(nibName: "TimelineCell", bundle: nil)
+    tableView.registerNib(nib, forCellReuseIdentifier:"Cell")
   }
 
   override func viewDidAppear(animated: Bool) {
@@ -40,14 +44,18 @@ final class TimelineVC: UIViewController ,instantiableStoryboard,UITableViewData
 
   // セルのテキストを追加
   func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "Cell")
-
-    cell.textLabel?.text = data[indexPath.row].body
-    return cell
+    let cell = tableView.dequeueReusableCellWithIdentifier("Cell") as? TimelineCell
+    cell?.title.text  = data[indexPath.row].subject
+    cell?.body.text  = data[indexPath.row].body
+    return cell!
   }
 
   // セルがタップされた時
   func tableView(table: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
     print(data[indexPath.row])
+  }
+
+  func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+    return UITableViewAutomaticDimension
   }
 }
