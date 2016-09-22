@@ -8,5 +8,5 @@
 
 import Foundation
 import UIKit
-final class TimelineNavigationController: UINavigationController,instantiableStoryboard {
+final class TimelineNavigationController: UINavigationController, instantiableStoryboard {
 }

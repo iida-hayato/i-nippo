@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-final class TimelineVC: UIViewController ,instantiableStoryboard,UITableViewDataSource,UITableViewDelegate {
+final class TimelineVC: UIViewController, instantiableStoryboard, UITableViewDataSource, UITableViewDelegate {
   @IBOutlet var tableView: UITableView!
 
   var _data: [NippoEntity]  = []

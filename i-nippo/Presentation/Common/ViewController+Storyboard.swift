@@ -10,7 +10,7 @@ import UIKit
 
 protocol instantiableStoryboard {
   static var storyboardName: String {get}
-  static func initFromStoryboard()->Self
+  static func initFromStoryboard() -> Self
 }
 
 extension instantiableStoryboard {
@@ -19,7 +19,7 @@ extension instantiableStoryboard {
       return String(describing: Self.self)
     }
   }
-  static func initFromStoryboard()->Self {
+  static func initFromStoryboard() -> Self {
     let storyboard: UIStoryboard = UIStoryboard(name: storyboardName, bundle: nil)
     let vc =  storyboard.instantiateInitialViewController()
     return vc  as! Self
