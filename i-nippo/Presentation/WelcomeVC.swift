@@ -13,12 +13,12 @@ import KeychainAccess
 
 class WelcomeVC: UIViewController {
 
-  override func viewDidAppear(animated: Bool) {
+  override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
     if Auth.sharedInstance.loggedIn() {
       // ログイン済
       let nextView                 = TimelineNavigationController.initFromStoryboard()
-      self.presentViewController(nextView, animated: true, completion: nil)
+      self.present(nextView, animated: true, completion: nil)
 
     } else {
       // contextとして自身（UIViewController)を指定する

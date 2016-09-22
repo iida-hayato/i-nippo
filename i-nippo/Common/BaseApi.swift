@@ -20,7 +20,7 @@ struct Api {
 
   static let domain = "http://localhost:3000"
 
-  static func client<T: Entity>(url: String, params: [String: AnyObject]? = nil, success: (([T]) -> ())? = nil, fail: errBlock? = nil) {
+  static func client<T: Entity>(_ url: String, params: [String: AnyObject]? = nil, success: (([T]) -> ())? = nil, fail: errBlock? = nil) {
     let headers = [
       "Authorization": "Bearer \(Auth.sharedInstance.accessToken()!)"
     ]
@@ -28,7 +28,7 @@ struct Api {
       .responseJSON {
         response in
         switch response.result {
-        case .Success(let value):
+        case .success(let value):
           if let statusCode = response.response?.statusCode {
             switch statusCode {
             case 401:
@@ -40,7 +40,7 @@ struct Api {
           print(json)
 
           success?(json.arrayValue.map {T.init(json: $0)})
-        case .Failure(let error):
+        case .failure(let error):
           print("error")
           print(error.description)
           fail?(error)

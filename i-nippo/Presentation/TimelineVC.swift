@@ -28,34 +28,34 @@ final class TimelineVC: UIViewController ,instantiableStoryboard,UITableViewData
     self.tableView.rowHeight = UITableViewAutomaticDimension
     //カスタムセルを指定
     let nib  = UINib(nibName: "TimelineCell", bundle: nil)
-    tableView.registerNib(nib, forCellReuseIdentifier:"Cell")
+    tableView.register(nib, forCellReuseIdentifier:"Cell")
   }
 
-  override func viewDidAppear(animated: Bool) {
+  override func viewDidAppear(_ animated: Bool) {
     Api.nippos {
       self.data  = $0
     }
   }
 
   // セルの行数
-  func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return data.count
   }
 
   // セルのテキストを追加
-  func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCellWithIdentifier("Cell") as? TimelineCell
-    cell?.title.text  = data[indexPath.row].subject
-    cell?.body.text  = data[indexPath.row].body
+  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as? TimelineCell
+    cell?.title.text  = data[(indexPath as NSIndexPath).row].subject
+    cell?.body.text  = data[(indexPath as NSIndexPath).row].body
     return cell!
   }
 
   // セルがタップされた時
-  func tableView(table: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-    print(data[indexPath.row])
+  func tableView(_ table: UITableView, didSelectRowAt indexPath: IndexPath) {
+    print(data[(indexPath as NSIndexPath).row])
   }
 
-  func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+  func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
     return UITableViewAutomaticDimension
   }
 }

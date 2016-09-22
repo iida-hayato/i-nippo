@@ -26,7 +26,7 @@ struct NippoEntity: Entity {
 }
 
 extension Api {
-  static func nippos(success: compBlock? = nil) {
+  static func nippos(_ success: compBlock? = nil) {
     let url = domain + "/api/nippos"
     client(url, success:success, fail:nil)
   }

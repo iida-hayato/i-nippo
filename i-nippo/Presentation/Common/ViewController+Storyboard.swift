@@ -16,7 +16,7 @@ protocol instantiableStoryboard {
 extension instantiableStoryboard {
   static var storyboardName: String {
     get {
-      return String(Self.self)
+      return String(describing: Self.self)
     }
   }
   static func initFromStoryboard()->Self {

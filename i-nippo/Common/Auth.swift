@@ -29,7 +29,7 @@ class Auth {
   }
   func auth() {
     oauthswift.authorizeWithCallbackURL(
-      NSURL(string: "oauth-swift://oauth/callback")!,
+      URL(string: "oauth-swift://oauth/callback")!,
       scope: "", state:"NIPPO",
       success: { credential, response, parameters in
         // トークンを保存
