@@ -1,4 +1,4 @@
 github "Alamofire/Alamofire"
 github "SwiftyJSON/SwiftyJSON"
-github "OAuthSwift/OAuthSwift" ~> 0.5.0
+github "skedgo/OAuthSwift" "swift3.0"
 github "kishikawakatsumi/KeychainAccess"
