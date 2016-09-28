@@ -1,5 +1,5 @@
 language: objective-c
 osx_image: xcode8
-script: xcodebuild -project i-nippo.xcodeproj -scheme i-nippoTests -destination platform="iOS Simulator,name=iPhone 6s" -sdk iphonesimulator test  | xcpretty  && exit ${PIPESTATUS[0]}
+script: xcodebuild -project i-nippo.xcodeproj -scheme i-nippo -destination platform="iOS Simulator,name=iPhone 6s" -sdk iphonesimulator test  | xcpretty  && exit ${PIPESTATUS[0]}
 before_script:
   - sudo systemsetup -settimezone  Asia/Tokyo
