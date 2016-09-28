@@ -24,7 +24,7 @@ struct Api {
     let headers = [
       "Authorization": "Bearer \(Auth.sharedInstance.accessToken()!)"
     ]
-    Alamofire.request(.GET, url, parameters: params, headers: headers)
+    Alamofire.request(url, method: .get, parameters: params, encoding: URLEncoding.default, headers: headers)
       .responseJSON {
         response in
         switch response.result {
@@ -42,8 +42,8 @@ struct Api {
           success?(json.arrayValue.map {T.init(json: $0)})
         case .failure(let error):
           print("error")
-          print(error.description)
-          fail?(error)
+          print(error.localizedDescription)
+          fail?(error as NSError)
           Auth.sharedInstance.logout()
         }
     }
