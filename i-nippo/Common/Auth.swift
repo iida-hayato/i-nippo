@@ -9,12 +9,11 @@
 import Foundation
 import OAuthSwift
 import SwiftyJSON
-import KeychainAccess
 
 class Auth {
   static let sharedInstance = Auth()
   let ACCESS_TOKEN   = "access_token"
-  let keychain = KeychainAccess.Keychain(service: "hi.i-nippo")
+  let store = UserDefaults.standard
 
   let oauthswift: OAuth2Swift
 
@@ -33,7 +32,7 @@ class Auth {
       scope: "", state:"NIPPO",
       success: { credential, response, parameters in
         // トークンを保存
-        try! self.keychain.set(credential.oauth_token, key: self.ACCESS_TOKEN)
+         self.store.set(credential.oauth_token, forKey: self.ACCESS_TOKEN)
         print(credential.oauth_token)
       },
       failure: { error in
@@ -42,7 +41,7 @@ class Auth {
   }
 
   func accessToken() -> String? {
-    return try! keychain.get(ACCESS_TOKEN)
+    return  store.string(forKey: ACCESS_TOKEN)
   }
 
   func loggedIn() -> Bool {
@@ -50,7 +49,7 @@ class Auth {
   }
 
   func logout() {
-    try! keychain.remove(ACCESS_TOKEN)
+    try! store.removeObject(forKey: ACCESS_TOKEN)
   }
 
 }
