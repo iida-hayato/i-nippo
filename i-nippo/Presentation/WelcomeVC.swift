@@ -11,13 +11,13 @@ import SwiftyJSON
 import OAuthSwift
 import KeychainAccess
 
-class WelcomeVC: UIViewController {
+final class WelcomeVC: UIViewController {
 
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
     if Auth.sharedInstance.loggedIn() {
       // ログイン済
-      let nextView                 = TimelineNavigationController.initFromStoryboard()
+      let nextView                 = RootTabVC.initFromStoryboard()
       self.present(nextView, animated: true, completion: nil)
 
     } else {

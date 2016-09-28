@@ -32,7 +32,10 @@
 		0BE43A421D70819C007AB85F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BE43A411D70819C007AB85F /* Assets.xcassets */; };
 		0BE43A501D70819C007AB85F /* i_nippoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE43A4F1D70819C007AB85F /* i_nippoTests.swift */; };
 		0BE43A5B1D70819C007AB85F /* i_nippoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE43A5A1D70819C007AB85F /* i_nippoUITests.swift */; };
-		0BF316AF1D9BF70900A0BF90 /* RootTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BF316AE1D9BF70900A0BF90 /* RootTab.storyboard */; };
+		0BF316AF1D9BF70900A0BF90 /* RootTabVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BF316AE1D9BF70900A0BF90 /* RootTabVC.storyboard */; };
+		0BF316B11D9BFB4A00A0BF90 /* PostNippo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BF316B01D9BFB4A00A0BF90 /* PostNippo.storyboard */; };
+		0BF316B31D9BFB7F00A0BF90 /* PostNippoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF316B21D9BFB7F00A0BF90 /* PostNippoVC.swift */; };
+		0BF316B51D9BFC1800A0BF90 /* RootTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF316B41D9BFC1800A0BF90 /* RootTabVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,7 +91,10 @@
 		0BE43A561D70819C007AB85F /* i-nippoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "i-nippoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BE43A5A1D70819C007AB85F /* i_nippoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = i_nippoUITests.swift; sourceTree = "<group>"; };
 		0BE43A5C1D70819C007AB85F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0BF316AE1D9BF70900A0BF90 /* RootTab.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RootTab.storyboard; sourceTree = "<group>"; };
+		0BF316AE1D9BF70900A0BF90 /* RootTabVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RootTabVC.storyboard; sourceTree = "<group>"; };
+		0BF316B01D9BFB4A00A0BF90 /* PostNippo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = PostNippo.storyboard; path = ../Presentation/PostNippo.storyboard; sourceTree = "<group>"; };
+		0BF316B21D9BFB7F00A0BF90 /* PostNippoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostNippoVC.swift; sourceTree = "<group>"; };
+		0BF316B41D9BFC1800A0BF90 /* RootTabVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootTabVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +150,8 @@
 				0B193BAF1D70C57D00188F78 /* Common */,
 				0B9C47491D7C4C4300C384CE /* TimelineCell.swift */,
 				0B9C47471D7C4BE400C384CE /* TimelineCell.xib */,
+				0BF316B21D9BFB7F00A0BF90 /* PostNippoVC.swift */,
+				0BF316B41D9BFC1800A0BF90 /* RootTabVC.swift */,
 				0BD59B211D70BF3E00ED92D2 /* TimelineNavigationController.swift */,
 				0B57BFA41D7093C800D77039 /* TimelineVC.swift */,
 				0B57BFA61D7093C800D77039 /* WelcomeVC.swift */,
@@ -189,8 +197,9 @@
 		0BD59B181D70942300ED92D2 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				0BF316AE1D9BF70900A0BF90 /* RootTabVC.storyboard */,
+				0BF316B01D9BFB4A00A0BF90 /* PostNippo.storyboard */,
 				0BD59B191D70942300ED92D2 /* LaunchScreen.storyboard */,
-				0BF316AE1D9BF70900A0BF90 /* RootTab.storyboard */,
 				0BD59B1D1D70942300ED92D2 /* TimelineNavigationController.storyboard */,
 				0B193BB01D70C5E900188F78 /* TimelineVC.storyboard */,
 				0BD59B1B1D70942300ED92D2 /* Welcome.storyboard */,
@@ -365,10 +374,11 @@
 				0B193BB31D70C75F00188F78 /* LaunchScreen.storyboard in Resources */,
 				0B92CBBD1D708FEB00473D40 /* SwiftyJSON.framework.dSYM in Resources */,
 				0BE43A421D70819C007AB85F /* Assets.xcassets in Resources */,
+				0BF316B11D9BFB4A00A0BF90 /* PostNippo.storyboard in Resources */,
 				0B92CBB11D708FEB00473D40 /* Alamofire.framework.dSYM in Resources */,
 				0BD59B201D70942300ED92D2 /* TimelineNavigationController.storyboard in Resources */,
 				0B193BB11D70C5E900188F78 /* TimelineVC.storyboard in Resources */,
-				0BF316AF1D9BF70900A0BF90 /* RootTab.storyboard in Resources */,
+				0BF316AF1D9BF70900A0BF90 /* RootTabVC.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +429,8 @@
 				0B57BFA01D70937E00D77039 /* NipposApi.swift in Sources */,
 				0BD59B221D70BF3E00ED92D2 /* TimelineNavigationController.swift in Sources */,
 				0B57BF9E1D70937E00D77039 /* Auth.swift in Sources */,
+				0BF316B31D9BFB7F00A0BF90 /* PostNippoVC.swift in Sources */,
+				0BF316B51D9BFC1800A0BF90 /* RootTabVC.swift in Sources */,
 				0B193BAE1D70C57100188F78 /* ViewController+Storyboard.swift in Sources */,
 				0B9C474A1D7C4C4300C384CE /* TimelineCell.swift in Sources */,
 				0B57BFA91D7093C800D77039 /* TimelineVC.swift in Sources */,
