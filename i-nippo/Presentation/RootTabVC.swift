@@ -8,6 +8,6 @@
 
 import Foundation
 import UIKit
-final class RootTabVC: UITabBarController,instantiableStoryboard {
+final class RootTabVC: UITabBarController, instantiableStoryboard {
 
 }

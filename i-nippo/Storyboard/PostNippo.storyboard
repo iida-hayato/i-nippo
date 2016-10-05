@@ -30,10 +30,17 @@
                                 <frame key="frameInset" minX="105" minY="350" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="sendMessage:" destination="egz-d4-H8D" eventType="touchUpInside" id="8Jv-B8-BWk"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="sendButton" destination="zf7-yC-ESh" id="up2-fB-3qI"/>
+                        <outlet property="textView" destination="NNT-nc-5Sf" id="zuc-xf-L51"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cDL-S2-tBa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

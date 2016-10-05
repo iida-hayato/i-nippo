@@ -30,4 +30,8 @@ extension Api {
     let url = domain + "/api/nippos"
     client(url, success:success, fail:nil)
   }
+  static func sendNippo(nippo:String,success: compBlock? = nil) {
+    let url = domain + "/api/nippos"
+    post(url,params:["nippo":nippo as AnyObject], success:success, fail:nil)
+  }
 }

@@ -8,6 +8,13 @@
 
 import Foundation
 import UIKit
+import Alamofire
 final class PostNippoVC: UIViewController {
+  @IBOutlet weak var textView: UITextView!
+  @IBOutlet weak var sendButton: UIButton!
 
+
+  @IBAction func sendMessage(_ sender: AnyObject) {
+    Api.sendNippo(nippo: textView.text)
+  }
 }

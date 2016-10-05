@@ -48,4 +48,25 @@ struct Api {
         }
     }
   }
+
+  static func post<T: Entity>(_ url: String, params: [String: AnyObject]? = nil, success: (([T]) -> ())? = nil, fail: errBlock? = nil) {
+    let headers = [
+      "Authorization": "Bearer \(Auth.sharedInstance.accessToken()!)"
+    ]
+    Alamofire.request(url, method: .post, parameters: params, encoding: URLEncoding.default, headers: headers)
+      .responseJSON {
+        response in
+        switch response.result {
+        case .success(let value):
+          let json = JSON(value)
+          print(json)
+          success?(json.arrayValue.map {T.init(json: $0)})
+        case .failure(let error):
+          print("error")
+          print(error.localizedDescription)
+          fail?(error as NSError)
+        }
+    }
+  }
+
 }
