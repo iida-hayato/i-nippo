@@ -15,6 +15,6 @@ final class PostNippoVC: UIViewController {
 
 
   @IBAction func sendMessage(_ sender: AnyObject) {
-    Api.sendNippo(nippo: textView.text)
+    Api.sendNippo(body: textView.text)
   }
 }
