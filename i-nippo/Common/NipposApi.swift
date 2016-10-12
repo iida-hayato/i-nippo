@@ -33,7 +33,7 @@ extension Api {
   static func sendNippo(body: String, success: compBlock? = nil) {
     let url = domain + "/api/nippos"
     //FIXME work around
-    var nippo:[String:String] = [:]
+    var nippo: [String:String] = [:]
     nippo["body"] = body
     nippo["reported_for"] = "2016-10-10"
     post(url, params:["nippo":nippo as AnyObject], success:success, fail:nil)
