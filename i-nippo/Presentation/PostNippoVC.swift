@@ -12,9 +12,15 @@ import Alamofire
 final class PostNippoVC: UIViewController {
   @IBOutlet weak var textView: UITextView!
   @IBOutlet weak var sendButton: UIButton!
+  @IBOutlet weak var reportedForTextView: UITextField!
 
 
   @IBAction func sendMessage(_ sender: AnyObject) {
-    Api.sendNippo(body: textView.text)
+    guard let reportedFor = reportedForTextView.text else {
+      //TODO error監視
+      print("reportedFor must not nil")
+      return
+    }
+    Api.sendNippo(body: textView.text,reportedFor: reportedFor)
   }
 }
