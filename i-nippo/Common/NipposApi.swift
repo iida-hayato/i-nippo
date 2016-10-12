@@ -30,7 +30,7 @@ extension Api {
     let url = domain + "/api/nippos"
     client(url, success:success, fail:nil)
   }
-  static func sendNippo(body: String,reportedFor: String, success: compBlock? = nil) {
+  static func sendNippo(body: String, reportedFor: String, success: compBlock? = nil) {
     let url = domain + "/api/nippos"
     var nippo: [String:String] = [:]
     nippo["body"] = body

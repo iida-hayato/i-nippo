@@ -21,6 +21,6 @@ final class PostNippoVC: UIViewController {
       print("reportedFor must not nil")
       return
     }
-    Api.sendNippo(body: textView.text,reportedFor: reportedFor)
+    Api.sendNippo(body: textView.text, reportedFor: reportedFor)
   }
 }
