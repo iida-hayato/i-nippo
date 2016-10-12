@@ -1,4 +1,5 @@
 github "Alamofire/Alamofire"
 github "SwiftyJSON/SwiftyJSON"
-github "skedgo/OAuthSwift" "swift3.0"
+github "OAuthSwift/OAuthSwift"
 github "kishikawakatsumi/KeychainAccess"
+github "ReactiveX/RxSwift" "3.0.0-beta.2"
