@@ -25,7 +25,7 @@ final class WelcomeVC: UIViewController {
 //      Auth.sharedInstance.oauth2!.authConfig.authorizeContext = self
       // ログイン画面を出す
 //      Auth.sharedInstance.oauth2!.authorize()
-      Auth.sharedInstance.oauthswift.authorize_url_handler = SafariURLHandler(viewController: self)
+      Auth.sharedInstance.oauthswift.authorizeURLHandler = SafariURLHandler(viewController: self, oauthSwift: Auth.sharedInstance.oauthswift)
       Auth.sharedInstance.auth()
     }
   }

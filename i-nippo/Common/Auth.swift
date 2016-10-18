@@ -27,13 +27,13 @@ class Auth {
     )
   }
   func auth() {
-    oauthswift.authorizeWithCallbackURL(
+    oauthswift.authorize(withCallbackURL:
       URL(string: "oauth-swift://oauth/callback")!,
       scope: "", state:"NIPPO",
       success: { credential, response, parameters in
         // トークンを保存
-         self.store.set(credential.oauth_token, forKey: self.ACCESS_TOKEN)
-        print(credential.oauth_token)
+         self.store.set(credential.oauthToken, forKey: self.ACCESS_TOKEN)
+        print(credential.oauthToken)
       },
       failure: { error in
         print(error.localizedDescription)
