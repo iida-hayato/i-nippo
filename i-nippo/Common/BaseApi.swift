@@ -1,4 +1,4 @@
-  //
+//
 //  Api.swift
 //  i-nippo
 //
