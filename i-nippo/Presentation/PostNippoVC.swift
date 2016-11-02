@@ -23,4 +23,12 @@ final class PostNippoVC: UIViewController {
     }
     Api.sendNippo(body: textView.text, reportedFor: reportedFor)
   }
+
+
+  override func viewDidLoad() {
+    Api.newNippo{ [weak self] nippo in
+      self?.textView.text = nippo.body
+      self?.reportedForTextView.text = nippo.reported_for
+    }
+  }
 }
