@@ -49,7 +49,7 @@ class Auth {
   }
 
   func logout() {
-    try! store.removeObject(forKey: ACCESS_TOKEN)
+    store.removeObject(forKey: ACCESS_TOKEN)
   }
 
 }
