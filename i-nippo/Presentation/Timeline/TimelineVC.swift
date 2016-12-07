@@ -15,7 +15,7 @@ final class TimelineVC: UIViewController, instantiableStoryboard, UITableViewDat
   @IBOutlet var tableView: UITableView!
   private let bag = DisposeBag.init()
 
-  enum Mode:Int {
+  enum Mode: Int {
     case Small = 0
     case Large = 1
   }
@@ -23,7 +23,7 @@ final class TimelineVC: UIViewController, instantiableStoryboard, UITableViewDat
   var viewMode = Variable<Mode>.init(.Small)
 
   var _data: [NippoEntity] = []
-  var data:  [NippoEntity] {
+  var data: [NippoEntity] {
     get {
       return self._data
     }
