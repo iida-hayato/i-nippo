@@ -8,11 +8,22 @@
 
 import Foundation
 import UIKit
+import RxSwift
+import RxCocoa
+
 final class TimelineVC: UIViewController, instantiableStoryboard, UITableViewDataSource, UITableViewDelegate {
   @IBOutlet var tableView: UITableView!
+  private let bag = DisposeBag.init()
 
-  var _data: [NippoEntity]  = []
-  var data: [NippoEntity] {
+  enum Mode:Int {
+    case Small = 0
+    case Large = 1
+  }
+
+  var viewMode = Variable<Mode>.init(.Small)
+
+  var _data: [NippoEntity] = []
+  var data:  [NippoEntity] {
     get {
       return self._data
     }
@@ -23,17 +34,39 @@ final class TimelineVC: UIViewController, instantiableStoryboard, UITableViewDat
   }
 
   override func viewDidLoad() {
+    super.viewDidLoad()
+
+    self.viewMode.asObservable()
+    .subscribe(onNext: {
+      (mode) in
+
+      switch mode {
+      case .Small:
+        self.tableView.rowHeight = 44
+      case .Large:
+        self.tableView.rowHeight = UITableViewAutomaticDimension
+      }
+
+      self.tableView.reloadSections(IndexSet.init(integer: 0), with: .none)
+
+    }).addDisposableTo(bag)
+
+    tableView.rx.itemSelected.asDriver().drive(onNext: { [weak self] (index) in
+      self?.viewMode.value = Mode(rawValue: ((self?.viewMode.value.rawValue)! + 1) % 2)!
+      }).addDisposableTo(bag)
+
+
+
     self.tableView.dataSource = self
     self.tableView.delegate = self
-    self.tableView.rowHeight = UITableViewAutomaticDimension
     //カスタムセルを指定
-    let nib  = UINib(nibName: "TimelineCell", bundle: nil)
-    tableView.register(nib, forCellReuseIdentifier:"Cell")
+    let nib = UINib(nibName: "TimelineCell", bundle: nil)
+    tableView.register(nib, forCellReuseIdentifier: "Cell")
   }
 
   override func viewDidAppear(_ animated: Bool) {
     Api.nippos {
-      self.data  = $0
+      self.data = $0
     }
   }
 
@@ -45,13 +78,14 @@ final class TimelineVC: UIViewController, instantiableStoryboard, UITableViewDat
   // セルのテキストを追加
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as? TimelineCell
-    cell?.title.text  = data[(indexPath as NSIndexPath).row].subject
-    cell?.body.text  = data[(indexPath as NSIndexPath).row].body
+    cell?.title.text = data[(indexPath as NSIndexPath).row].subject
+    cell?.body.text = data[(indexPath as NSIndexPath).row].body
     return cell!
   }
 
   // セルがタップされた時
   func tableView(_ table: UITableView, didSelectRowAt indexPath: IndexPath) {
+    self.viewMode.value = Mode(rawValue: ((self.viewMode.value.rawValue) + 1) % 2)!
     print(data[(indexPath as NSIndexPath).row])
   }
 
